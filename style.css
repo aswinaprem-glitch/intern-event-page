@@ -10,13 +10,6 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-header {
-  text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #ffb347, #ffcc70);
-}
-
 header h1 {
   font-size: 42px;
   margin-bottom: 10px;
@@ -30,6 +23,41 @@ header h2 {
 header p {
   font-size: 18px;
 }
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 70px 20px;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    #ffcc70 0%,
+    #ffcc70 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+}
+.header-image {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.college-image {
+  left: 0;
+  background-image: url("college.png");
+}
+
+.poster-image {
+  right: 0;
+  background-image: url("poster.png");
+}
+
 
 .date {
   display: inline-block;
